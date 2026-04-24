@@ -3,6 +3,7 @@ import Hero from "@/components/layouts/hero";
 import ChatButton from "@/components/layouts/ChatButton";
 import Navbar from "@/components/layouts/navbar";
 import ServiceSection from "@/components/layouts/sections/ServiceSection";
+import TestimonialSection from "@/components/layouts/sections/TestimonialSection";
 
 export default function HeroSection() {
   return (
@@ -21,7 +22,7 @@ export default function HeroSection() {
 
         <div><ServiceSection /></div>
 
-
+      <TestimonialSection/>
       </div>
     </>
 
