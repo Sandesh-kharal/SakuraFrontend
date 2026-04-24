@@ -5,21 +5,21 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 {/* Hero Content */}
  export default function Hero() {
     return (
-      <main className="relative max-w-7xl mx-auto px-8 pt-20 pb-32 grid lg:grid-cols-2 items-center">
+      <main className="relative min-h-screen bg-brand-dark overflow-hidden">
         {/* Background Glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-900/20 blur-[120px] rounded-full -z-10" />
+      <div className="absolute inset-0 z-0 bg-hero-glow pointer-events-none" />
 
+<div className="container mx-auto mt-20  py-8 px-13">
         <div className="max-w-2xl">
           <div className="flex items-center gap-3 mb-8">
             <div className="h-[1px] w-8 bg-yellow-500/50" />
-            <span className="text-xs uppercase tracking-[0.2em] text-yellow-500/80 font-medium">
-              Gongabu-9, Kathmandu — Est. 2017
-            </span>
+            <p className="text-label tracking-enterprise text-brand-gold uppercase  mb-4">Gongabu-9, Kathmandu — Est. 2017
+</p>
           </div>
 
-          <h2 className="text-6xl md:text-7xl font-serif mb-6 leading-[1.1]">
+          <h2 className="text-5xl md:text-6xl  font-serif  mb-6 leading-[1.1] ">
             Your Future in <br />
-            <span className="text-yellow-500 italic">Japan</span> Starts <br />
+            <span className="text-yellow-500  ">Japan</span> Starts <br />
             Right Here.
           </h2>
 
@@ -37,6 +37,7 @@ import { ArrowRight, MessageCircle } from "lucide-react";
             <Button variant="outline" className="border-zinc-700 bg-zinc-600 hover:bg-zinc-800 rounded-2xl text-white px-5 py-3 text-md">
               See How It Works
             </Button>
+          </div>
           </div>
         </div>
       </main>
