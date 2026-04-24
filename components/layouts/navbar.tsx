@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
    
     
-    <nav className="w-full mt-10 container mx-auto  bg-[#0f0810] px-6 py-4 flex items-center justify-between border-b border-white/5 ">
+    <nav className="w-full h-[13vh]  container mx-auto  bg-[#0f0810] px-6 py-4 flex items-center justify-between border-b border-white/5 ">
       {/* Left: Logo and Brand */}
       <div className="flex items-center gap-4 ">
         {/* Placeholder for the Cherry Blossom Logo */}

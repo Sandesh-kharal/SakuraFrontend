@@ -35,15 +35,14 @@
   --tracking-enterprise: 0.4em;
   --leading-hero: 1.05;
   --leading-section: 1.2;
-@theme {
-  /* ... your other theme variables ... */
 
-  /* Stronger gradient for that deep purple/pink vibe */
+ 
+
+
   --background-image-hero-glow: radial-gradient(
     circle at center, 
     rgba(233, 30, 99, 0.25) 0%, 
     rgba(88, 28, 77, 0.15) 40%, 
     rgba(5, 1, 6, 0) 75%
   );
-}
 }

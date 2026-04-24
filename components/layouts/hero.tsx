@@ -2,19 +2,18 @@ import { Button } from "@base-ui/react/button"
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 
-{/* Hero Content */}
- export default function Hero() {
-    return (
-      <main className="relative min-h-screen bg-brand-dark overflow-hidden">
-        {/* Background Glow */}
-      <div className="absolute inset-0 z-0 bg-hero-glow pointer-events-none" />
+{/* Hero Content */ }
+export default function Hero() {
+  return (
+    <main className="relative h-[87vh] bg-brand-dark overflow-hidden">
+      {/* Background Glow */}
 
-<div className="container mx-auto mt-20  py-8 px-13">
+      <div className="container mx-auto mt-20 px-13">
         <div className="max-w-2xl">
           <div className="flex items-center gap-3 mb-8">
             <div className="h-[1px] w-8 bg-yellow-500/50" />
             <p className="text-label tracking-enterprise text-brand-gold uppercase  mb-4">Gongabu-9, Kathmandu — Est. 2017
-</p>
+            </p>
           </div>
 
           <h2 className="text-5xl md:text-6xl  font-serif  mb-6 leading-[1.1] ">
@@ -24,8 +23,8 @@ import { ArrowRight, MessageCircle } from "lucide-react";
           </h2>
 
           <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-lg">
-            From your first Japanese lesson to landing at Narita Airport — 
-            Momiji International Academy guides you every step of the way. 
+            From your first Japanese lesson to landing at Narita Airport —
+            Momiji International Academy guides you every step of the way.
             Language training, SSW preparation, visas, and guaranteed job placement across 6 sectors.
           </p>
 
@@ -38,8 +37,8 @@ import { ArrowRight, MessageCircle } from "lucide-react";
               See How It Works
             </Button>
           </div>
-          </div>
         </div>
-      </main>
-    );
- }
+      </div>
+    </main>
+  );
+}
