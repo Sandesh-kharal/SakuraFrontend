@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <>
 
-      <div className="h-min-screen min-h-screen bg-[#0f0810]  text-white selection:bg-pink-700/30 relative overflow-hidden">
+      <div className="h-min-screen min-h-screen bg-[#0f0810]   text-white selection:bg-pink-700/30 relative overflow-hidden">
 
         <div>
           <div className="h-screen">

@@ -28,7 +28,7 @@ export default function Navbar() {
 
       {/* Center: Nav Links */}
       <div className="hidden lg:flex items-center gap-10">
-        {["About", "Services", "Job Sectors", "Process", "Our Team", "Contact"].map((item) => (
+        {["About", "OurServices", "StudyAbroad","Contact"].map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase().replace(" ", "-")}`}

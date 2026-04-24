@@ -1,6 +1,6 @@
 import React from 'react';
-import { Phone, Smartphone, Globe, ArrowRight, MessageCircle } from 'lucide-react';
-import { Button } from '@base-ui/react/button';
+import { Phone, Smartphone, Globe,  } from 'lucide-react';
+
 import Image from 'next/image';
 
 export default function EnterpriseFooter() {

@@ -22,7 +22,7 @@
         href="/ourservices"
         aria-label={`Explore ${title}`}
 
-        className="group block h-[310px] rounded-[2rem] overflow-hidden bg-white border border-gray-100 font-sans flex flex-col shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl [focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300/60"
+        className="group  h-77.5 rounded-4xl overflow-hidden bg-white border border-gray-100 font-sans flex flex-col shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl [focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300/60"
       >
         {/* Upper Section - Dynamic height */}
         <div className="flex-1 bg-white flex items-center justify-center transition-colors duration-300 group-hover:bg-pink-50">
@@ -30,13 +30,13 @@
         </div>
 
         {/* Content Section */}
-        <div className="h-[150px] bg-[#e91e63] text-white px-6 py-6 flex flex-col justify-between">
+        <div className="h-37.5 bg-primary text-white px-6 py-6 flex flex-col justify-between">
           <div>
             <p className="text-[10px] tracking-[0.2em] uppercase font-bold text-white/80 mb-1">
              {service}
             </p>
 
-            <h3 className="text-[18px] leading-[1.2] font-bold">
+            <h3 className="text-[18px] leading-section font-bold">
              {title}
             </h3>
           </div>

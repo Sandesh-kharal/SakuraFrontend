@@ -5,7 +5,7 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 {/* Hero Content */ }
 export default function Hero() {
   return (
-    <main className="relative h-[87vh] bg-brand-dark overflow-hidden">
+    <main className="relative h-[87vh] bg-image-hero-glow overflow-hidden">
       {/* Background Glow */}
 
       <div className="container mx-auto mt-20 px-13">
@@ -29,11 +29,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-[#e91e63] hover:bg-[#d81b60] text-white px-5 py-  text-md font-semibold group rounded-2xl">
+            <Button className="bg-[#962c55] hover:bg-primary text-white px-5   text-md font-semibold group rounded-2xl">
               Book Free Consultation
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            
             </Button>
-            <Button variant="outline" className="border-zinc-700 bg-zinc-600 hover:bg-zinc-800 rounded-2xl text-white px-5 py-3 text-md">
+            <Button  className="border-zinc-700 bg-zinc-900 hover:bg-zinc-600 rounded-2xl text-white px-5 py-3 text-md">
               See How It Works
             </Button>
           </div>
