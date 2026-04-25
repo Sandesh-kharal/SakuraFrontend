@@ -6,32 +6,28 @@ export default function Navbar() {
   return (
    
     
-    <nav className="w-full h-[13vh]  container mx-auto  bg-[#0f0810] px-6 py-4 flex items-center justify-between border-b border-white/5 ">
-      {/* Left: Logo and Brand */}
-      <div className="flex items-center gap-4 ">
-        {/* Placeholder for the Cherry Blossom Logo */}
-        <div className="bg-white p-1 rounded-sm">
-           <div className="w-10 h-10 bg-[#d81b60] rounded-full flex items-center justify-center text-white text-[8px]">
-           <Image src="/logo.jpg" alt="Logo" width={40} height={40} />
-           </div>
-        </div>
+    <nav className="w-full h-[13vh]  container  mx-auto  bg-[#0f0810] px-6 py-4 flex items-center justify-between border-b border-white/5 ">
+    {/* Left: Logo and Brand */}
+<div className="relative flex items-center justify-center w-70 h-15 bg-white rounded-2xl border-white/20 overflow-hidden">
+  <Image 
+    src="/Sakuralogo.jpg" 
+    alt="Sakura Caring Logo" 
+   fill
+    className="object-contain p-2" // 'object-contain' ensures the whole logo is visible without cropping
+    priority 
+    rounded-2xl
+  />
+</div>
+    
         
-        <div className="flex flex-col">
-          <span className="text-white text-2xl font-serif font-bold tracking-tight leading-none">
-            Momiji International Academy
-          </span>
-          <span className="text-gray-400 text-[10px] tracking-[0.25em] font-medium mt-1 uppercase">
-            Nepal's Gateway to Japan
-          </span>
-        </div>
-      </div>
+      
 
       {/* Center: Nav Links */}
       <div className="hidden lg:flex items-center gap-10">
-        {["About", "OurServices", "StudyAbroad","Contact"].map((item) => (
+        {["OurServices", "StudyAbroad","AboutUs", "ContactUs"].map((item) => (
           <a
             key={item}
-            href={`#${item.toLowerCase().replace(" ", "-")}`}
+            href={`${item.toLowerCase().replace(" ", "-")}`}
             className="text-gray-200 text-[15px] font-normal hover:text-white transition-colors"
           >
             {item}

@@ -84,7 +84,7 @@ export default function TestimonialSection() {
   };
 
   return (
-    <div className="w-full py-16 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="w-full py-16 px-4 bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-slate-800 tracking-tight">
