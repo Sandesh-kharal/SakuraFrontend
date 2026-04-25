@@ -12,10 +12,10 @@ export default function Navbar() {
   <Image 
     src="/Sakuralogo.jpg" 
     alt="Sakura Caring Logo" 
-   fill
-    className="object-contain p-2" // 'object-contain' ensures the whole logo is visible without cropping
+    fill
+    sizes="(max-width: 768px) 70px, 280px"
+    className="object-contain p-2"
     priority 
-    rounded-2xl
   />
 </div>
     
