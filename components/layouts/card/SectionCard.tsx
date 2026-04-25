@@ -26,7 +26,7 @@
       >
         {/* Upper Section - Dynamic height */}
         <div className="flex-1 bg-white flex items-center justify-center transition-colors duration-300 group-hover:bg-pink-50">
-         <Image src="/logo.jpg" alt={title} width={200} height={200} />
+         <Image src="/logo.jpg" alt={title} width={200} height={200} style={{ width: 'auto', height: 'auto' }} />
         </div>
 
         {/* Content Section */}
@@ -42,9 +42,8 @@
           </div>
 
           <div className="flex justify-end items-center">
-           <a 
-        href="/ourservices" 
-        className="flex items-center gap-1.5 text-[13px] font-semibold hover:scale-110 transition-opacity"
+           <div 
+        className="flex items-center gap-1.5 text-[13px] font-semibold group-hover:scale-110 transition-opacity"
       >
         Explore More
         <svg 
@@ -58,7 +57,7 @@
           <path d="M5 12h14" />
           <path d="m12 5 7 7-7 7" />
         </svg>
-      </a>
+      </div>
           </div>
         </div>
       </a>
