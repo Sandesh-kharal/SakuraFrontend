@@ -45,9 +45,9 @@ export default function ServicesPage() {
                     src="/Girl.png"
                     alt="sakura Academy Instructor holding textbooks"
                     fill
+                    sizes="(max-width: 768px) 100vw, 400px"
                     className="object-contain"
                     priority
-                  
                   />
                 </div>
               </div>

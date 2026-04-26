@@ -15,6 +15,7 @@ export default function EnterpriseFooter() {
                 src="/Sakuralogo.jpg"
                 alt="Logo"
                 fill
+                sizes="(max-width: 640px) 160px, 176px"
                 className="object-contain p-2"
                 priority
               />
