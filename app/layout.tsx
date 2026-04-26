@@ -27,22 +27,22 @@ export const metadata: Metadata = {
   description: "consultancy for abroad study",
 };
 
+// app/layout.tsx
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html
-      lang="en"
-      className={`${sans.variable} ${serif.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
-       
+    // Add suppressHydrationWarning here
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased">
+        <Navbar />
         {children}
-        <Footer  />
-        
-        </body>
+        <Footer />
+      </body>
     </html>
-  );
+  )
 }
+  
