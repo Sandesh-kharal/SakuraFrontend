@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link"
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -14,26 +15,30 @@ export default function Navbar() {
       <div className=" h-[13vh]  container  mx-auto  px-6 py-4 flex items-center justify-between border-b border-white/5">
         {/* Left: Logo and Brand */}
         <div className="relative flex items-center justify-center w-70 h-15 bg-white rounded-2xl border-white/20 overflow-hidden">
-          <Image
+          
+          <Link href="/">
+        <Image
             src="/Sakuralogo.jpg"
             alt="Sakura Caring Logo"
             fill
             sizes="(max-width: 768px) 70px, 280px"
             className="object-contain p-2"
             priority
+            
           />
+            </Link>
         </div>
 
         {/* Center: Nav Links */}
         <div className="hidden lg:flex items-center gap-10">
-          {["OurServices", "StudyAbroad", "AboutUs", "ContactUs"].map(
+          {["Our Services", "Study Abroad", "About Us", "Contact Us"].map(
             (item) => (
               <a
                 key={item}
                 href={`${item.toLowerCase().replace(" ", "-")}`}
                 className="text-gray-200 text-[15px] font-normal hover:text-white transition-colors"
               >
-                {item}
+               {item.toUpperCase()}
               </a>
             ),
           )}
