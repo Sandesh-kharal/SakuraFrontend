@@ -23,7 +23,7 @@ const serif = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "sakura",
+  title: "Sakura Caring -  Abroad Study And Training Center",
   description: "consultancy for abroad study",
 };
 
@@ -38,7 +38,7 @@ export default function RootLayout({
       className={`${sans.variable} ${serif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-       
+       <Navbar />
         {children}
         <Footer  />
         

@@ -13,7 +13,6 @@ export default function HeroSection() {
 
         <div>
           <div className="h-screen">
-            <Navbar />
             <Hero />
           </div>
 
