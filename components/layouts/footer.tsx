@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function EnterpriseFooter() {
   return (
-    <footer className="border-t border-white/5 bg-[#0b060c] px-4 py-12 font-sans text-zinc-400 sm:px-6 sm:py-16 lg:px-8">
+    <footer className="border-t border-white/5 bg-gray-900 px-4 py-12 font-sans text-zinc-400 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         {/* Main Grid: responsive columns */}
         <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:mb-16 lg:grid-cols-4 lg:gap-12">
@@ -92,7 +92,7 @@ export default function EnterpriseFooter() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-6 text-[12px] text-zinc-600 md:flex-row md:items-center">
-          <p>© 2026 Momiji International Academy. All rights reserved.</p>
+          <p>© 2026 Sakura Caring. All rights reserved.</p>
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-6 md:mt-0">
             <span className="cursor-pointer hover:text-zinc-400">Privacy Policy</span>
             <span className="cursor-pointer hover:text-zinc-400">

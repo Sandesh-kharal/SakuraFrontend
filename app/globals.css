@@ -7,10 +7,14 @@
 @import 'swiper/css/pagination';
 @import 'swiper/swiper-bundle.css';
 
+  
+
 
 @theme {
   /* --- COLOR THEME --- */
-  --color-primary: #e91e63;
+  --color-primary: #f04f77;
+  --color-secondary: #f8562b;
+  --color-tertiary:#f0f6ff;
   --color-primary-dark: #ad1457;
   --color-brand-dark: #050106;
   --color-brand-gold: #ffb800;

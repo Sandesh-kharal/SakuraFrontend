@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Avatar,
@@ -13,9 +13,9 @@ import {
 } from "@/components/ui/testimonialAvatar";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 interface Testimonial {
   id: number;
@@ -84,10 +84,10 @@ export default function TestimonialSection() {
   };
 
   return (
-    <div className="w-full py-16 px-4 bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="w-full pb-10 px-4 bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-slate-800 tracking-tight">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 text-slate-800 tracking-tight">
           What our clients love about us
         </h2>
 

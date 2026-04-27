@@ -11,10 +11,10 @@ export default function Navbar() {
   const navItems = ["OUR SERVICES", "STUDY ABROAD", "ABOUT US", "CONTACT US"];
 
   return (
-    <nav className="w-full  bg-[#0f0810]">
-      <div className=" h-[13vh]  container  mx-auto  px-6 py-4 flex items-center justify-between border-b border-white/5">
+    <nav className="w-full  bg-primary">
+      <div className=" max-h-[13vh]  container  mx-auto  px-6 py-4 flex items-center justify-between border-b border-white/5">
         {/* Left: Logo and Brand */}
-        <div className="relative flex items-center justify-center w-70 h-15 bg-white rounded-2xl border-white/20 overflow-hidden">
+        <div className="relative flex items-center justify-center w-50 h-10 sm:w-70 sm:h-15 bg-white rounded-2xl border-white/20 overflow-hidden">
           
           <Link href="/">
         <Image

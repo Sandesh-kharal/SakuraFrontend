@@ -1,7 +1,17 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { GraduationCap, Globe, Users, Award, CheckCircle2, MapPin, Phone, Mail } from 'lucide-react';
+import React from "react";
+import Image from "next/image";
+import {
+  GraduationCap,
+  Globe,
+  Users,
+  Award,
+  CheckCircle2,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 export default function AboutUs() {
   const [activeService, setActiveService] = React.useState<number | null>(null);
@@ -9,67 +19,75 @@ export default function AboutUs() {
   const services = [
     {
       icon: <GraduationCap className="w-8 h-8" />,
-      title: 'Japanese Language Courses',
-      description: 'JLPT/NAT preparation with expert instructors',
+      title: "Japanese Language Courses",
+      description: "JLPT/NAT preparation with expert instructors",
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: 'SSW Program',
-      description: 'Comprehensive JFT & Skill training courses',
+      title: "SSW Program",
+      description: "Comprehensive JFT & Skill training courses",
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: 'Visa Processing',
-      description: 'Student visa consultation and processing',
+      title: "Visa Processing",
+      description: "Student visa consultation and processing",
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: 'Job Placement',
-      description: 'Career opportunities in Japan',
+      title: "Job Placement",
+      description: "Career opportunities in Japan",
     },
   ];
 
   const specializations = [
-    'Agriculture',
-    'Nursing Care',
-    'Food Service',
-    'Hotel Accommodation',
-    'Ground Handling',
-    'Driving',
+    "Agriculture",
+    "Nursing Care",
+    "Food Service",
+    "Hotel Accommodation",
+    "Ground Handling",
+    "Driving",
   ];
 
   const whyChooseUs = [
-    'Extensive experience in Japanese language training',
-    'Personalized approach for every student',
-    'Comprehensive end-to-end services',
-    'Client-centric consultation model',
-    'Quality assurance in all programs',
-    'Transparent pricing structure',
-    'Native Japanese language expertise',
+    "Extensive experience in Japanese language training",
+    "Personalized approach for every student",
+    "Comprehensive end-to-end services",
+    "Client-centric consultation model",
+    "Quality assurance in all programs",
+    "Transparent pricing structure",
+    "Native Japanese language expertise",
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-white">
+    <div className="min-h-screen bg-tertiary">
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-20 pb-32 px-4">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-pink-200/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-200/20 rounded-full blur-3xl" />
-        
+        <div className="absolute top-20 right-10 w-72 h-72 bg-tertiary rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-tertiary rounded-full blur-3xl" />
+
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-flex items-center gap-3 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center shadow-lg">
-                <span className="text-3xl">🍁</span>
+              <div className="w-16 h-16 bg-tertiary rounded-2xl flex items-center justify-center shadow-lg">
+         
+                  <Image
+                    src="/logo.png"
+                    alt="Logo"
+                    width={40}
+                    height={64}
+                    className="w-full h-full object-fit-cover object-fit-fill object-fit-lg-contain rounded-2xl shadow-lg"
+                  />{" "}
+      
               </div>
             </div>
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-rose-500 to-pink-600 bg-clip-text text-transparent tracking-tight">
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-primary bg-clip-text text-transparent tracking-tight">
               Sakura Caring
             </h1>
             <p className="text-2xl md:text-3xl text-gray-600 font-light tracking-wide">
               さくらケアリング
             </p>
             <div className="mt-8 inline-block">
-              <p className="text-lg text-gray-700 font-medium px-6 py-3 bg-pink-100/50 rounded-full border border-pink-200">
+              <p className="text-lg text-gray-700 font-medium px-6 py-3 bg-tertiary rounded-full border border-pink-200">
                 Your Expert Japanese Language Training School
               </p>
             </div>
@@ -82,9 +100,10 @@ export default function AboutUs() {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed text-center">
-                To empower students with the knowledge, skills, and confidence they need to succeed 
-                in their educational pursuits in Japan. We are a team of experienced professionals 
-                committed to providing exceptional consultancy services to our clients.
+                To empower students with the knowledge, skills, and confidence
+                they need to succeed in their educational pursuits in Japan. We
+                are a team of experienced professionals committed to providing
+                exceptional consultancy services to our clients.
               </p>
             </div>
           </div>
@@ -109,25 +128,25 @@ export default function AboutUs() {
                 onMouseLeave={() => setActiveService(null)}
                 className="group bg-white rounded-2xl p-8 shadow-lg border border-pink-100 hover:border-pink-300 transition-all duration-300 hover:-translate-y-2 cursor-pointer"
               >
-                <div className={`w-16 h-16 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 ${
-                  activeService === index
-                    ? 'bg-gradient-to-br from-pink-500 to-rose-500 text-white'
-                    : 'bg-pink-100 text-pink-600'
-                }`}>
+                <div
+                  className={`w-16 h-16 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 ${
+                    activeService === index
+                      ? "bg-primary text-white"
+                      : "bg-pink-100 text-pink-600"
+                  }`}
+                >
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">
-                  {service.description}
-                </p>
+                <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
           </div>
 
           {/* Specializations */}
-          <div className="bg-gradient-to-br from-pink-100 to-rose-100 rounded-3xl p-10">
+          <div className="bg-tertiary rounded-3xl p-10">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
               Training Specializations
             </h3>
@@ -135,7 +154,7 @@ export default function AboutUs() {
               {specializations.map((spec, index) => (
                 <div
                   key={index}
-                  className="px-6 py-3 bg-white rounded-full border border-pink-200 text-gray-700 font-medium hover:bg-pink-50 hover:border-pink-300 transition-all duration-300"
+                  className="px-6 py-3 bg-white rounded-full border border-pink-200 text-gray-700 font-medium hover:bg-primary hover:text-white transition-all duration-300"
                 >
                   {spec}
                 </div>
@@ -170,12 +189,14 @@ export default function AboutUs() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-pink-500 to-rose-500 text-white">
+      <section className="py-20 px-4 bg-primary text-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div>
               <div className="text-5xl font-bold mb-2">100+</div>
-              <div className="text-pink-100 text-lg">Students Placed in Japan</div>
+              <div className="text-pink-100 text-lg">
+                Students Placed in Japan
+              </div>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">95%</div>
@@ -207,7 +228,8 @@ export default function AboutUs() {
                 </div>
                 <h3 className="font-bold text-gray-800">Location</h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Samakhushi-10, Tokha Road<br />
+                  Samakhushi-10, Tokha Road
+                  <br />
                   Suganda Complex, Kathmandu
                 </p>
               </div>
@@ -218,7 +240,8 @@ export default function AboutUs() {
                 </div>
                 <h3 className="font-bold text-gray-800">Phone</h3>
                 <p className="text-gray-600 text-sm">
-                  01-5912507<br />
+                  01-5912507
+                  <br />
                   9761678769
                 </p>
               </div>
@@ -228,9 +251,7 @@ export default function AboutUs() {
                   <Mail className="w-6 h-6 text-pink-600" />
                 </div>
                 <h3 className="font-bold text-gray-800">Email</h3>
-                <p className="text-gray-600 text-sm">
-                  Sakurainepal@gmail.com
-                </p>
+                <p className="text-gray-600 text-sm">Sakurainepal@gmail.com</p>
               </div>
             </div>
 
@@ -242,24 +263,6 @@ export default function AboutUs() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-6">
-            <h3 className="text-2xl font-bold mb-2">Sakura Caring</h3>
-            <p className="text-gray-400">さくらケアリング</p>
-          </div>
-          <p className="text-gray-400 mb-4">
-            Empowering dreams through Japanese language education
-          </p>
-          <div className="flex justify-center gap-4 text-sm text-gray-400">
-            <a href="https://Sakura.edu.np" className="hover:text-pink-400 transition-colors">
-              Sakura.edu.np
-            </a>
-            <span>•</span>
-            <span>© 2024 Sakura Caring</span>
-          </div>
-        </div>
-      </footer>
 
       <style jsx global>{`
         @keyframes fade-in {
@@ -277,10 +280,14 @@ export default function AboutUs() {
           animation: fade-in 1s ease-out;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
 
         * {
-          font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+          font-family:
+            "Outfit",
+            system-ui,
+            -apple-system,
+            sans-serif;
         }
       `}</style>
     </div>

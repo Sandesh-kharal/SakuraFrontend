@@ -7,8 +7,8 @@ import TestimonialSection from "@/components/layouts/sections/TestimonialSection
 
 export default function HeroSection() {
   return (
-    <main className="relative overflow-hidden bg-[#0f0810] text-white selection:bg-pink-700/30">
-      <section className="min-h-[100svh] sm:min-h-screen">
+    <main className="relative overflow-hidden bg-tertiary text-black selection:bg-pink-700/30">
+      <section className="max-h-[100svh] ">
         <Hero />
       </section>
 
@@ -16,11 +16,11 @@ export default function HeroSection() {
         <ChatButton />
       </div>
 
-      <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <section className="px-4 py-4">
         <ServiceSection />
       </section>
 
-      <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <section className="px-4 py-4">
         <TestimonialSection />
       </section>
     </main>
