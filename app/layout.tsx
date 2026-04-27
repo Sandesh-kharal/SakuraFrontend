@@ -27,11 +27,13 @@ export const metadata: Metadata = {
   description: "consultancy for abroad study",
 };
 
+// app/layout.tsx
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html
       lang="en"
@@ -40,9 +42,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
        <Navbar />
         {children}
-        <Footer  />
-        
-        </body>
+        <Footer />
+      </body>
     </html>
-  );
+  )
 }
+  

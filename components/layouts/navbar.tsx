@@ -1,7 +1,14 @@
 "use client";
 import Image from "next/image";
 
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = ["OUR SERVICES", "STUDY ABROAD", "ABOUT US", "CONTACT US"];
+
   return (
     <nav className="w-full  bg-[#0f0810]">
       <div className=" h-[13vh]  container  mx-auto  px-6 py-4 flex items-center justify-between border-b border-white/5">
