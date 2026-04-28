@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -312,9 +313,12 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <button className="mt-10 px-8 py-4 bg-linear-to-r from-pink-500 to-rose-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Link href={'/contact-us'}>
+            <button  className="mt-10 px-8 py-4 bg-linear-to-r from-pink-500 to-rose-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
               Contact Us Today
             </button>
+            </Link>
+            
           </div>
         </div>
       </section>
