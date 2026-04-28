@@ -62,7 +62,7 @@ export default function AboutUs() {
     "Native Japanese language expertise",
   ];
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index:any) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
