@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link"
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Home, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["OUR SERVICES", "STUDY ABROAD", "ABOUT US", "CONTACT US"];
+  const navItems = ["Home","OUR SERVICES", "ABOUT US", "CONTACT US"];
 
   return (
     <nav className="w-full  bg-primary">
@@ -31,7 +31,7 @@ export default function Navbar() {
 
         {/* Center: Nav Links */}
         <div className="hidden lg:flex items-center gap-10">
-          {["Our Services", "Study Abroad", "About Us", "Contact Us"].map(
+          {navItems.map(
             (item) => (
               <a
                 key={item}
