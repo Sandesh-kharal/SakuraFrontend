@@ -156,7 +156,7 @@ export default function TestimonialSection() {
                     </div>
 
                     {/* Testimonial Text */}
-                    <p className="text-slate-600 leading-relaxed mb-6 flex-grow text-sm">
+                    <p className="text-slate-600 leading-relaxed mb-6 grow text-sm">
                       {testimonial.testimonial}
                     </p>
 

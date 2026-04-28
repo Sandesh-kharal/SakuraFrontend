@@ -38,7 +38,7 @@ export default function ServicesPage() {
             </h1>
 
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[2fr_3fr]">
-              <div className="group relative flex aspect-[3/4] items-center justify-center">
+              <div className="group relative flex aspect-3/4 items-center justify-center">
                 <div className="absolute inset-0  scale-110 rounded-full  bg-[#e91e63]/20 blur-3xl transition-all duration-500 group-hover:scale-125" />
                 <div className="relative border-2 border-zinc-300 shadow-2xl rounded-2xl z-10 h-full w-full  ">
                   <Image
@@ -52,8 +52,8 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              <section className="relative overflow-hidden rounded-[2rem] border border-slate-100 bg-slate-50 p-10 shadow-xl md:p-14">
-                <div className="absolute right-[-20px] top-[-20px] h-32 w-32 rounded-full bg-[#e91e63]/10" />
+              <section className="relative overflow-hidden rounded-4xl border border-slate-100 bg-slate-50 p-10 shadow-xl md:p-14">
+                <div className="absolute -right-5 -top-5 h-32 w-32 rounded-full bg-[#e91e63]/10" />
                 <p className="relative z-10 max-w-lg text-xl leading-relaxed italic text-slate-700">
                   Established in 2017,{' '}
                   <span className="font-semibold text-slate-950">

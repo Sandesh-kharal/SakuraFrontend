@@ -16,7 +16,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <h2 className="mb-6 text-4xl leading-[1.1] font-serif text-4xl sm:text-5xl md:text-6xl">
+          <h2 className="mb-6 text-4xl leading-[1.1] font-serif sm:text-5xl md:text-6xl">
             Your Future in <br />
             <span className="text-secondary">Japan</span> Starts <br />
             Right Here.
@@ -30,10 +30,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row">
-            <Button className="sm:px-8 sm:py-4 px-4 py-2  border-1 border-primary rounded-3xl bg-secondary text-md hover:bg-primary  text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Button className="sm:px-8 sm:py-4 px-4 py-2  border border-primary rounded-3xl bg-secondary text-md hover:bg-primary  text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               Book Free Consultation
             </Button>
-            <Button className="sm:px-8 sm:py-4 px-4 py-2 border-1 border-primary rounded-3xl text-dark bg-tertiary text-md hover:bg-primary  hover:text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Button className="sm:px-8 sm:py-4 px-4 py-2 border border-primary rounded-3xl text-dark bg-tertiary text-md hover:bg-primary  hover:text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               See How It Works
             </Button>
           </div>

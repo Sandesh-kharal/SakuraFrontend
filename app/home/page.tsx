@@ -8,7 +8,7 @@ import TestimonialSection from "@/components/layouts/sections/TestimonialSection
 export default function HeroSection() {
   return (
     <main className="relative overflow-hidden bg-tertiary text-black selection:bg-pink-700/30">
-      <section className="max-h-[100svh] ">
+      <section className="max-h-svh ">
         <Hero />
       </section>
 

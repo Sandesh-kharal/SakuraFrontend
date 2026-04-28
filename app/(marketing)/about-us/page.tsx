@@ -178,7 +178,7 @@ export default function AboutUs() {
                 className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-md border border-pink-100 hover:shadow-lg transition-all duration-300"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <CheckCircle2 className="w-6 h-6 text-pink-500" />
                 </div>
                 <p className="text-gray-700 text-lg">{reason}</p>
@@ -255,7 +255,7 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <button className="mt-10 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <button className="mt-10 px-8 py-4 bg-linear-to-r from-pink-500 to-rose-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               Contact Us Today
             </button>
           </div>

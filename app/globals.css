@@ -11,45 +11,31 @@
 
 
 @theme {
-  /* --- COLOR THEME --- */
   --color-primary: #f04f77;
   --color-secondary: #f8562b;
-  --color-tertiary:#f0f6ff;
+  --color-tertiary: #f0f6ff;
+
   --color-primary-dark: #ad1457;
   --color-brand-dark: #050106;
   --color-brand-gold: #ffb800;
   --color-brand-muted: #71717a;
 
-  /* --- FONT FAMILIES --- */
   --font-heading: var(--font-serif);
-  --font-sans: var(--font-sans);
+  --font-body: var(--font-sans);
 
-  /* --- FONT SIZES (Fluid & Static) --- */
-  /* Main Hero Title: Scales from 3.5rem to 5.5rem based on screen width */
-  /* use text-hero */
-  --font-size-hero: clamp(3.5rem, 8vw, 5.5rem);
-  
-  /* Section Headings (like the 60+ Universities title) */
+  --font-size-hero: clamp(2.5rem, 8vw, 5.5rem);
   --font-size-section: clamp(2rem, 5vw, 3.5rem);
-  
-  /* Body text and navigation */
   --font-size-ui: 0.875rem;
-  
-  /* Small Enterprise labels (Gongabu-9 tag) */
   --font-size-label: 0.65rem;
 
-  /* --- TYPOGRAPHY UTILITIES --- */
   --tracking-enterprise: 0.4em;
   --leading-hero: 1.05;
   --leading-section: 1.2;
 
- 
-
-
   --background-image-hero-glow: radial-gradient(
-    circle at center, 
-    rgba(233, 30, 99, 0.25) 0%, 
-    rgba(88, 28, 77, 0.15) 40%, 
+    circle at center,
+    rgba(233, 30, 99, 0.25) 0%,
+    rgba(88, 28, 77, 0.15) 40%,
     rgba(5, 1, 6, 0) 75%
   );
 }
