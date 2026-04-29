@@ -50,7 +50,7 @@ export default function Navbar() {
           <button
             onClick={toggleLanguage}
             className={`absolute h-9 w-11 rounded-full bg-linear-to-r from-primary to-secondary text-white text-xl font-semibold flex items-center justify-center transition-all duration-300 cursor-pointer ${
-              activeLanguage === "EN" ? "left-0.5" : "right-0.5"
+              activeLanguage === "EN" ? "left-0.5" : "left-8"
             }`}
           >
             <span className="text-2xl">
