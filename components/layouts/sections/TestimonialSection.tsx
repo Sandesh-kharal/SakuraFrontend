@@ -124,7 +124,7 @@ export default function TestimonialSection() {
           >
             {testimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id} className="h-full">
-                <Card className="h-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 rounded-2xl overflow-hidden group">
+                <Card className="h-full bg-white shadow-lg hover:shadow-xl transition-all border-none border-0! outline-none duration-300 rounded-2xl overflow-hden group">
                   <CardContent className="p-8 flex flex-col h-full">
                     {/* Avatar and Name */}
                     <div className="flex items-center gap-4 mb-6">
@@ -204,7 +204,7 @@ export default function TestimonialSection() {
         }
 
         .swiper-slide{
-            height:400px;
+            height:auto;
         }
         .swiper-pagination-bullet-active {
           border-radius: 4px;
