@@ -56,18 +56,21 @@ export default function Navbar() {
           <div className="group relative inline-flex h-9 w-16 cursor-pointer items-center rounded-full border-2 border-white/20 bg-white p-0.5 shadow-md transition-all duration-300 hover:border-white/40 hover:shadow-lg sm:h-10 sm:w-20">
             <button
               onClick={toggleLanguage}
-              className={`relative flex h-full w-1/2 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-lg font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg active:scale-95 sm:text-xl ${
+              className={`relative z-10 flex h-full w-1/2 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-lg font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg active:scale-95 sm:text-xl ${
                 activeLanguage === "EN" ? "translate-x-0" : "translate-x-full"
               }`}
               aria-label={`Switch to ${activeLanguage === "EN" ? "Japanese" : "English"}`}
               type="button"
               title={`Current language: ${activeLanguage === "EN" ? "English" : "Japanese"}`}
             >
-              <span className="inline-block transition-transform duration-300">{activeLanguage === "EN" ? "🇬🇧" : "🇯🇵"}</span>
+              <span className="inline-block transition-transform duration-300">
+                {activeLanguage === "EN" ? "🇬🇧" : "🇯🇵"}
+              </span>
             </button>
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-1.5 text-xs font-bold text-white/60 sm:px-2 sm:text-sm">
-              <span>EN</span>
-              <span>JPN</span>
+
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-1.5 text-[10px] font-bold text-white/60 sm:px-2 sm:text-xs">
+              <span className="text-black">EN</span>
+              <span className="text-black">JPN</span>
             </div>
           </div>
 
