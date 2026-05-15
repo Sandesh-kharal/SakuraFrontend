@@ -9,7 +9,7 @@ export default function EnterpriseFooter() {
         {/* Main Grid: responsive columns */}
         <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:mb-16 lg:grid-cols-4 lg:gap-12">
           {/* Column 1: Brand & Contact */}
-          <div className="space-y-5 sm:space-y-6">
+          <div className="space-y-5 sm:space-y-6 md:col-span-2 lg:col-span-1">
             <div className="relative flex h-14 w-40 items-center justify-center overflow-hidden rounded-xl bg-white sm:w-44">
               <Image
                 src="/Sakuralogo.jpg"

@@ -53,23 +53,28 @@ export default function Navbar() {
 
         {/* Right controls */}
         <div className="flex items-center gap-2 sm:gap-3">
-          <div className="inline-flex h-9 w-20 items-center rounded-full border border-zinc-200 bg-white p-0.5 shadow-sm sm:h-10 sm:w-24">
+          <div className="group relative inline-flex h-9 w-16 cursor-pointer items-center rounded-full border-2 border-white/20 bg-white p-0.5 shadow-md transition-all duration-300 hover:border-white/40 hover:shadow-lg sm:h-10 sm:w-20">
             <button
               onClick={toggleLanguage}
-              className={`flex h-full w-10 items-center justify-center rounded-full bg-linear-to-r from-primary to-secondary text-xl font-semibold text-white transition-all duration-300 sm:w-12 ${
-                activeLanguage === "EN" ? "translate-x-0" : "translate-x-4 sm:translate-x-6"
+              className={`relative flex h-full w-1/2 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-lg font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg active:scale-95 sm:text-xl ${
+                activeLanguage === "EN" ? "translate-x-0" : "translate-x-full"
               }`}
-              aria-label="Toggle language"
+              aria-label={`Switch to ${activeLanguage === "EN" ? "Japanese" : "English"}`}
               type="button"
+              title={`Current language: ${activeLanguage === "EN" ? "English" : "Japanese"}`}
             >
-              <span className="text-xl">{activeLanguage === "EN" ? "🇬🇧" : "🇯🇵"}</span>
+              <span className="inline-block transition-transform duration-300">{activeLanguage === "EN" ? "🇬🇧" : "🇯🇵"}</span>
             </button>
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-1.5 text-xs font-bold text-white/60 sm:px-2 sm:text-sm">
+              <span>EN</span>
+              <span>JPN</span>
+            </div>
           </div>
 
           <button
             type="button"
             onClick={() => setIsOpen((prev) => !prev)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition-colors hover:bg-white/10 lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition-all duration-200 hover:bg-white/10 active:scale-95 lg:hidden"
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
