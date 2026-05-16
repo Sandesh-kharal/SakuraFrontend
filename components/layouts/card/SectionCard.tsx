@@ -1,18 +1,20 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 interface SectionCardProps {
   service: string;
   title: string;
+  href: string;
 }
 
-const SectionCard = ({ service, title }: SectionCardProps) => {
+const SectionCard = ({ service, title, href }: SectionCardProps) => {
   return (
     <div>
-      <a
-        href="/ourservices"
+      <Link
+        href={href}
         aria-label={`Explore ${title}`}
-        className="group  h-77.5 rounded-4xl overflow-hidden bg-white border border-gray-100 font-sans flex flex-col shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl [focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300/60"
+        className="group  h-77.5 rounded-4xl overflow-hidden bg-white border border-gray-100 font-sans flex flex-col shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl [focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300/60]"
       >
         {/* Upper Section - Dynamic height */}
         <div className="flex-1 bg-dark flex items-center justify-center transition-colors duration-300 group-hover:bg-pink-50 ">
@@ -21,7 +23,9 @@ const SectionCard = ({ service, title }: SectionCardProps) => {
             alt={title}
             width={150}
             height={150}
-            className="object-cover"
+            loading="eager"
+            className="object-cover w-auto h-auto"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
 
@@ -52,7 +56,7 @@ const SectionCard = ({ service, title }: SectionCardProps) => {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
